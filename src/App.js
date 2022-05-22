@@ -15,7 +15,10 @@ function App() {
   const [title, setTitle] = useState("");
   //
   const getlink = (link) => {
-    if (RegExp("(http|https)://alaatv.com/c/[0-9]+").test(link)) {
+    if (RegExp("^alaatv.com/c/[0-9]+").test(link)) {
+      link = "https://" + link;
+    }
+    if (RegExp("(https?|http?)?alaatv.com/c/[0-9]+").test(link)) {
       setlod(true);
       var request = new XMLHttpRequest();
       request.open("GET", link, true);
@@ -92,7 +95,9 @@ function App() {
                   <input
                     class="form-control form-control-lg form-control-borderless"
                     type="search"
-                    onChange={(e) => setLink(e.target.value)}
+                    onChange={(e) => {
+                      setLink(e.target.value);
+                    }}
                     placeholder="Enter Link Video : https://alaatv.com/c/12345"
                   />
                 </div>
