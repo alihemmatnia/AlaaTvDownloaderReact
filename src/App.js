@@ -18,7 +18,7 @@ function App() {
     if (RegExp("^alaatv.com/c/[0-9]+").test(link)) {
       link = "https://" + link;
     }
-    if (RegExp("(https?|http?)?alaatv.com/c/[0-9]+").test(link)) {
+    if (RegExp("(https?)?alaatv.com/c/[0-9]+").test(link)) {
       setlod(true);
       var request = new XMLHttpRequest();
       request.open("GET", link, true);
@@ -81,10 +81,10 @@ function App() {
         }}
       >
         <h2 className="text-center textcolor mt-1">AlaaTv Downloader </h2>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 mt-3">
+        <div className="row justify-content-center">
+          <div className="col-12 col-md-10 col-lg-8 mt-3">
             <div
-              class="card card-sm"
+              className="card card-sm"
               style={{
                 boxShadow: "rgba(100, 100, 111, 0.2) 0px 9px 29px 0px",
                 borderRadius: "10px",
@@ -145,6 +145,22 @@ function App() {
           );
         }
       })()}
+      <br />
+      <footer>
+        <div className="container d-flex justify-content-center align-items-center">
+          <div className="text-center">
+            <h5>Created By Ali HemmatNia</h5>
+            <a
+              target={"_blank"}
+              className="text-center"
+              rel="noreferrer"
+              href="https://github.com/Ali2004h-linux/AlaaTvDownloaderReact"
+            >
+              Source Code
+            </a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }

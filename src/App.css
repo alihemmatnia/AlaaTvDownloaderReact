@@ -1,40 +1,57 @@
 .btn1 {
-    padding: 14px 24px;
-    border: 0 none;
-    font-weight: 700;
-    letter-spacing: 1px;
-    /* text-transform: uppercase; */
-    border-radius: 24px;
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  border-radius: 24px;
 }
 
-.btn1:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
+.btn1:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: 0 none;
 }
 
 .btn-primary {
-    background: #0099cc;
-    color: #ffffff;
+  background: #0099cc;
+  color: #ffffff;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #33a6cc;
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background: #33a6cc;
 }
 
-.btn-primary:active, .btn-primary.active {
-    background: #007299;
-    box-shadow: none;
+.btn-primary:active,
+.btn-primary.active {
+  background: #007299;
+  box-shadow: none;
 }
 .btn-primary.raised {
-	box-shadow: 0 3px 0 0 #007299;
+  box-shadow: 0 3px 0 0 #007299;
 }
-.btn-primary.raised:active, .btn-primary.raised.active {
-	background: #33a6cc;
-	box-shadow: none;
-	margin-bottom: -3px;
-	margin-top: 3px;
+.btn-primary.raised:active,
+.btn-primary.raised.active {
+  background: #33a6cc;
+  box-shadow: none;
+  margin-bottom: -3px;
+  margin-top: 3px;
 }
 .textcolor {
-    background-image:linear-gradient(45deg,blue,orange,red,green);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-   }
+  background-image: linear-gradient(45deg, blue, orange, red, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 3%;
+}
