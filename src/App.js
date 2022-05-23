@@ -149,7 +149,7 @@ function App() {
       <footer>
         <div className="container d-flex justify-content-center align-items-center">
           <div className="text-center">
-            <h5>Created By Ali HemmatNia</h5>
+            <h5>Created By Ali </h5>
             <a
               target={"_blank"}
               className="text-center"
